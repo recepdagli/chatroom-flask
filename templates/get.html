@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+        
+        ul {
+            width: 100%;
+            margin: auto;
+            text-align : left;
+        }
+        </style>
+        
+    </head>   
+    <body onload="onload()">
+    <center>
+        <div class="maindiv">
+            <ul class="list-group">
+            {%for i in data%}
+                <li class="list-group-item">{{i[0]+": "+i[1]}}</li>
+            {%endfor%}
+            </ul>
+        </div>
+        <script>
+            window.scrollTo(0,document.body.scrollHeight);
+        setTimeout(
+            function() {
+                window.location.reload(1);
+            }, 5000);
+        </script>
+    </center>
+    </body>
+</html>

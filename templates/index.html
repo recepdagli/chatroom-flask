@@ -1,0 +1,43 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+
+        input[placeholder="Message"]{
+        position:absolute;
+        width : 40%;
+        bottom:0px;
+        left:35%;
+        }
+
+        input[placeholder="Who"]{
+        position:absolute;
+        width : 10%;
+        bottom:0px;
+        left:25%;
+        }
+
+        input[type="submit"] {
+        position:absolute;
+        bottom:0px;
+        left:75%;
+        }
+
+        iframe{
+            width : 50%;
+            height : 60%;
+        }
+        </style>
+    </head>   
+    <body>
+    <center>
+        <iframe src="/get"></iframe>
+        <form method="post">
+            <input type="text" class="form-control" placeholder="Message" name="message">
+            <input type="text" class="form-control" placeholder="Who" name="who" value="{{name}}">
+            <input type="submit" class="btn btn-primary" >
+        </form>
+    </center>
+    </body>
+</html>
